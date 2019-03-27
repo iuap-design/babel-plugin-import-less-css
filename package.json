@@ -1,0 +1,22 @@
+{
+  "name": "babel-plugin-import-less-css",
+  "version": "0.0.1",
+  "description": "babel转码中使用import(\"./index.less\")修改为require(\"./index.css\")",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuap-design/babel-plugin-import-less-css.git"
+  },
+  "keywords": [],
+  "author": "Kvkens(yueming@yonyou.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iuap-design/babel-plugin-import-less-css/issues"
+  },
+  "homepage": "https://github.com/iuap-design/babel-plugin-import-less-css#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-types": "^6.26.0"
+  }
+}
