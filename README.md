@@ -19,7 +19,7 @@ $ npm install babel-plugin-import-less-css -D
 {
 	"presets": [],
 	"plugins": [
-		"./babel-plugin-import-less-css"
+		"import-less-css"
 	]
 }
 ```
