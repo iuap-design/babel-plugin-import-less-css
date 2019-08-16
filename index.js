@@ -3,12 +3,14 @@
  * @author:Kvkens
  */
 
-module.exports = function () {
+module.exports = function (babel) {
+    let t = babel.types;
     return {
         visitor: {
-            ImportDeclaration(path, source) {
-                if (path.node.source.value == './index.less') {
-                    path.node.source.value = "./index.css";
+            CallExpression(path, source) {
+                let node = path.node.arguments;
+                if(Array.isArray(node) && node.length > 0 && node[0].value && path.node.callee && path.node.callee.name == 'require'){
+                    node[0].value = node[0].value.replace('.less','.css');
                 }
             }
         }

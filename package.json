@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-import-less-css",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "babel转码中使用import(\"./index.less\")修改为require(\"./index.css\")",
   "main": "index.js",
   "scripts": {},
